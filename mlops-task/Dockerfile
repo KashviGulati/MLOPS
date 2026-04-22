@@ -8,15 +8,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-CMD [
-  "python",
-  "run.py",
-  "--input",
-  "data.csv",
-  "--config",
-  "config.yaml",
-  "--output",
-  "metrics.json",
-  "--log-file",
-  "run.log"
-]
+CMD ["python", "run.py", "--input", "data.csv", "--config", "config.yaml", "--output", "metrics.json", "--log-file", "run.log"]
